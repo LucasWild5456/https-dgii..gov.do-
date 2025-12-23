@@ -1,0 +1,81 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+/* Barra verde arriba */
+.barra-verde {
+    background-color: #7caa17;
+    padding: 10px 20px;
+    border-bottom: 2px solid #3b3b3b;
+}
+
+/* Texto PLACA PROVISIONAL pequeño y en verde oscuro */
+.placa-provisional {
+    font-size: 12px;
+    color: #294308;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Sección con título */
+.titulo {
+    margin: 20px 40px;
+}
+
+.sistema {
+    font-size: 12px;
+    color: #c16f00;
+    margin: 0;
+    font-weight: 600;
+}
+
+.titulo h1 {
+    color: #3b7d11;
+    font-weight: 600;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Tabla principal */
+.tabla-datos {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 40px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabla-datos td {
+    border-bottom: 1px solid #dcdcdc;
+    padding: 10px 15px;
+}
+
+/* Celdas de etiquetas a la izquierda con fondo gris claro */
+.etiqueta {
+    background-color: #f2f2f2;
+    width: 40%;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Celdas con datos a la derecha */
+.tabla-datos td:not(.etiqueta) {
+    color: #222;
+}
+
+/* Footer sencillo */
+.pie-pagina {
+    margin: 40px 40px;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Evitar que la tabla se achique demasiado */
+@media (max-width: 600px) {
+    .tabla-datos {
+        width: 100%;
+    }
+}
